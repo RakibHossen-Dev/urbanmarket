@@ -21,7 +21,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* box-shadow: 0 5px 0 #ff6b6b; */
 }
 .header {
   background-color: #fff;
@@ -60,7 +59,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: 100px; */
 }
 .banner-content h5 {
   font-size: 4rem;
@@ -150,7 +148,7 @@ img {
 
 .about {
   padding: 2rem 1rem;
-  background-color: #f0f0f0; /* Light Gray */
+  background-color: #f0f0f0;
   text-align: center;
 }
 
@@ -165,7 +163,7 @@ img {
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
-  color: #666666; /* Dim Gray */
+  color: #666666;
 }
 
 /* Contact Us section styles */
@@ -211,8 +209,8 @@ img {
 }
 
 .btn {
-  background-color: #ff6b6b; /* Dodger Blue */
-  color: #ffffff; /* White */
+  background-color: #ff6b6b;
+  color: #ffffff;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -221,8 +219,8 @@ img {
 }
 /* Footer section styles */
 .footer {
-  background-color: #333333; /* Dark Charcoal */
-  color: #ffffff; /* White */
+  background-color: #333333;
+  color: #ffffff;
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -262,13 +260,13 @@ img {
 }
 
 .footer .footer-section a {
-  color: #ffffff; /* White */
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer .footer-section a:hover {
-  color: #007bff; /* Dodger Blue */
+  color: #000;
 }
 
 .footer .socials {
@@ -332,5 +330,18 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+
+/* tablet responsive */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .navigation {
+    display: none;
+  }
+  .bars-icon {
+    display: block;
+  }
+  .product-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
