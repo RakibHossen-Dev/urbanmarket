@@ -298,10 +298,27 @@ img {
 
 @media screen and (max-width: 576px) {
   .navigation {
-    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.5);
+  }
+  .hidden {
+    visibility: hidden;
+  }
+
+  .header {
+    position: relative;
+  }
+  .navigation li {
+    margin-bottom: 20px;
   }
   .bars-icon {
     display: block;
+    cursor: pointer;
   }
   .logo {
     font-size: 1.5rem;
